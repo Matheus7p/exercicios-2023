@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300&display=swap');
+
+
+.news{
+
+    position: relative;
+    padding-left: 30px;
+    padding-top: 10px;
+
+    h2{
+        font-family: 'Roboto' sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        color: #ed7839;
+        padding-bottom: 15px;
+    }
+
+    .container{
+        position: relative;
+        width: 784px;
+        height: 439px;
+    }
+    
+    .video{
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .videoOverlay{
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(141, 53, 6, 0.4);
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+
+
+        .infoVideo{
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            margin-bottom: 25px;
+
+            .border{
+                border: 1px solid #ed7839;
+                border-radius: 50%;
+                padding: 0;
+                margin: 0;
+
+
+                img{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;    
+                
+                }
+            }
+
+            img{
+                width: 74.85px;
+                height: 77.49px;
+                top: 4.26px;
+                left: 4.57px;
+                border: 1px;
+                padding: 4px;
+            }
+
+            .text{
+
+                padding-left: 20px;
+
+                h4{
+                    font-family: 'Roboto' sans-serif;
+                    font-weight: 900;
+                    font-size: 30px;
+                    line-height: 25px;
+                    letter-spacing: 1px;
+                    color: #ffffff;
+                    white-space: nowrap;
+    
+                    span{
+                        font-family: 'Roboto' sans-serif;
+                        font-weight: 900;
+                        font-size: 20px;
+                        line-height: 25px;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+
+            
+        }
+
+
+        h3{
+            font-family: 'Roboto' sans-serif;
+            font-size: 24px;
+            line-height: 25px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            padding: 30px;
+
+        }
+    }
+
+}
