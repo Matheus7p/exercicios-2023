@@ -1,8 +1,60 @@
 <app-side-bar></app-side-bar>
 
-<main> 
-<app-header></app-header>
+<main>
+  <app-header></app-header>
 
-<app-news></app-news>
+  <div class="content">
+    <div class="col-1">
+      <app-news></app-news>
+    </div>
+    <div class="col-2"></div>
 
+    <div class="col-3">
+      <div class="row-1">
+        <div class="buttons">
+          <app-button class="btn-download">
+            <img src="../assets/download.svg" alt="" />
+            <p>Download</p>
+          </app-button>
+
+          <app-button class="doi-btn">
+            <img src="../assets/fav.svg" alt="" />
+          </app-button>
+          <app-button>
+            <img src="../assets/doi.svg" alt="" />
+          </app-button>
+        </div>
+        <h3>COMO CITAR ESSE TRABALHO?</h3>
+      </div>
+
+      <div class="row-2">
+        <div class="emphasis">
+          <div class="row-1">
+            <h4>Destaques</h4>
+          </div>
+
+          <div class="row-2">
+            <p>
+              Tipo de Apresentação: <strong>Pôster</strong> <br>
+              Eixo temático: <strong>Alimentação e saúde (AS)</strong> <br>
+              Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong> <br><br><br>
+              <strong>Autores:</strong><br>
+              Galileo Galilei¹<br> 
+              Berta Lange de Morretes²<br> 
+              Isaac Newton³<br>
+              Cesar Lattes¹<br> Stephen Hawking⁴<br>
+              <br>
+
+              <span>
+              ¹Universidade Estadual de Campinas <br>
+              ²Universidade de São Paulo <br> 
+              ³Instituto Nacional de Pesquisas Espaciais <br>
+              ⁴Universidade Federal do Rio de Janeiro
+            </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>

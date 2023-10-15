@@ -1,0 +1,21 @@
+button{
+    height: 31px;
+    border: 1px solid #ed7839;
+    background-color: #ed7839;
+    border-radius: 4px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    margin: 5px;
+    margin-top: 10px;
+
+   
+}
+
+button:hover{
+    cursor: pointer;
+    outline: none;
+
+}
