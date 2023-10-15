@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300&display=swap");
+
+:host {
+  font-family: "Roboto", sans-serif;
+}
+.discussion {
+  width: 1255px;
+  height: 621px;
+  border: 1px solid #ececec;
+  margin: 25px 10px 10px 30px;
+  display: grid;
+  grid-template-rows: 45px auto auto;
+
+  .titleDiscussion {
+    border: 1px solid #ececec;
+    background-color: #fdf1eb;
+
+    h4 {
+      font-family: "Roboto", sans-serif;
+      padding: 10px;
+      color: #4e4e4e;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 1;
+    }
+  }
+
+  .contentDiscussion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h5 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-size: 18px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      text-align: center;
+      line-height: 2;
+      color: #ed7839;
+    }
+
+    p {
+      font-family: "Quicksand", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 2;
+      text-align: center;
+      color: #595959;
+      padding: 0px 0px 7px 0px;
+    }
+
+    .containerCreateTopic {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+      .btn-create-topic {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        height: 32px;
+        font-family: "Quicksand" sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1px;
+        color: #ffffff;
+        background: linear-gradient(#feb254, #f0813d);
+        border: none;
+        border-radius: 3px;
+        box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+
+        &::after{
+            content: "";
+            position: absolute;
+            margin-left: 10%;
+            width: 80%;
+            height: 1px;
+            background-color: #e7e7e7;
+            left: 0;
+            z-index: -1;
+
+        }
+
+        img {
+          padding-right: 5px;
+        }
+      }
+
+      .createTopic{
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100%;
+
+        button{
+          width: 20%;
+          justify-self: end;
+          border-radius: 0px;
+        }
+
+        h6{
+          font-family: 'Quicksand'sans-serif;
+          text-align: center;
+          color: #5c5c5c;
+          font-size: 14px;
+          line-height: 1;
+          letter-spacing: 3;
+          font-weight: 400;
+        }
+
+        form{
+          display: grid;
+          grid-template-rows: auto auto;
+          gap: 10px;
+          justify-content: start;
+          
+          label{
+            font-family: 'Roboto' sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1;
+            padding: 3px;
+            color: #ed7839;
+          }
+
+          input{
+            width: 1000px;
+            border: 1px solid #cccccc;
+            height: 39px;
+            outline: none;
+            padding-left: 20px;
+          }
+
+          input::placeholder{
+            font-size: 14px;
+            color: #4d4d4d;
+          }
+
+          textarea{
+            height: 132px;
+            border: 1px solid #cccccc;
+            padding-left: 20px;
+            padding-top: 5px;
+          }
+
+        }
+      }
+
+      .confirmTopic{
+        display: grid;
+        grid-template-rows: auto auto;
+
+
+        button{
+          justify-content: center;
+          max-width: 25%;
+          margin-left: 35%;
+        }
+      }
+      
+    }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 60px;
+      height: 50px;
+      margin: 0 20px 0px 20px;
+    }
+  }
+}
+.btn-create-topic:hover {
+  cursor: pointer;
+}

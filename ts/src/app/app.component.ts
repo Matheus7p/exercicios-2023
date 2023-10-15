@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DevChuva';
+
+  isCreatingTopic: boolean = true;
+
+  onTopicCreated() {
+    this.isCreatingTopic = false;
+  }
+
+  onCreateNewTopic() {
+    this.isCreatingTopic = true;
+  }
 }

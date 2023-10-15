@@ -1,0 +1,80 @@
+<div class="discussion">
+  <div class="titleDiscussion">
+    <h4>Discussões</h4>
+  </div>
+  <div class="contentDiscussion">
+    <h5 *ngIf="!createTopic">
+      Compartilhe suas ideias ou dúvidas com os autores!
+    </h5>
+    <div class="icons">
+      <img
+        *ngIf="!createTopic"
+        src="../../../assets/iconDiscussion1.svg"
+        alt=""
+      />
+      <img
+        *ngIf="!createTopic"
+        src="../../../assets/iconDiscussion2.svg"
+        alt=""
+      />
+      <img
+        *ngIf="!createTopic"
+        src="../../../assets/iconDiscussion3.svg"
+        alt=""
+      />
+    </div>
+
+    <p *ngIf="!createTopic">
+      Sabia que o maior estímulo no desenvolvimento científico e cultural é a
+      curiosidade? <br />
+      Deixe seus questionamentos ou sugestões para o autor!
+    </p>
+
+    <div class="containerCreateTopic">
+      <div *ngIf="!createTopic && !showMensage">
+        <button class="btn-create-topic" (click)="createNewTopic()">
+          Criar Novo Tópico
+        </button>
+      </div>
+      <div *ngIf="createTopic">
+        <div class="createTopic">
+          <form (ngSubmit)="submitTopic()">
+            <h6>
+              Tem uma dúvida ou sugestão? Compartilhe seu feedback com os
+              autores!
+            </h6>
+            <br /><br />
+            <label for="subject">Assunto</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Defina um tópico sucinto para notificar os autores..."
+              [(ngModel)]="novoTopico.subject"
+            />
+
+            <label for="content">Conteúdo</label>
+            <textarea
+              id="content"
+              name="content"
+              [(ngModel)]="novoTopico.content"
+            >
+            </textarea>
+
+            <button class="btn-create-topic" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div *ngIf="showMensage" class="confirmTopic">
+        <p>Seu tópico foi enviado com sucesso! :D</p>
+        <p>
+          Agradecemos por sua contribuição, uma notificação será enviada ao seu
+          email assim que seu tópico for respondido!
+        </p>
+        <button class="btn-create-topic"  (click)="createNewTopic()">
+          criar novo tópico
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

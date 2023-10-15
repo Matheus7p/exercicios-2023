@@ -8,6 +8,9 @@ import { NewsComponent } from './components/news/news.component';
 import { ButtonComponent } from './components/button/button.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { EmphasisComponent } from './components/emphasis/emphasis.component';
+import { DiscussionComponent } from './components/discussion/discussion.component';
+import { TopicsComponent } from './components/discussion/topics/topics.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,9 +20,12 @@ import { EmphasisComponent } from './components/emphasis/emphasis.component';
     NewsComponent,
     ButtonComponent,
     SummaryComponent,
-    EmphasisComponent
+    EmphasisComponent,
+    DiscussionComponent,
+    TopicsComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule
   ],
   providers: [],
