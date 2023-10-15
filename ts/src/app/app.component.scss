@@ -28,7 +28,7 @@ main {
 
   .col-3{
     display: grid;
-    grid-template-rows: 85px 439px;
+    grid-template-rows: auto auto;
 
     .row-1{
       flex: 1;
@@ -79,6 +79,11 @@ main {
         font-size: 16px;
       }
     }
+  }
+
+  .discussion{
+    display: grid;
+    grid-template-rows: auto auto auto;
   }
 }
 

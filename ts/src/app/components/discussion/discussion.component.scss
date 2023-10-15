@@ -5,11 +5,12 @@
 }
 .discussion {
   width: 1255px;
-  height: 621px;
+  height: 700px;
   border: 1px solid #ececec;
+  border-bottom: none;
   margin: 25px 10px 10px 30px;
   display: grid;
-  grid-template-rows: 45px auto auto;
+  grid-template-rows: 45px auto auto auto;
 
   .titleDiscussion {
     border: 1px solid #ececec;
