@@ -6,6 +6,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { NewsComponent } from './components/news/news.component';
 import { ButtonComponent } from './components/button/button.component';
+import { SummaryComponent } from './components/summary/summary.component';
+import { EmphasisComponent } from './components/emphasis/emphasis.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { ButtonComponent } from './components/button/button.component';
     HeaderComponent,
     SideBarComponent,
     NewsComponent,
-    ButtonComponent
+    ButtonComponent,
+    SummaryComponent,
+    EmphasisComponent
   ],
   imports: [
     BrowserModule

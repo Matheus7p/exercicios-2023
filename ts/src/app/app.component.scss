@@ -9,10 +9,17 @@
   -moz-osx-font-smoothing: grayscale;
 
   display: flex;
+
+}
+
+app-side-bar{
+  position: fixed;
 }
 
 main {
+  margin-left: 220px;
   width: 100%;
+
 }
 
 .content {
@@ -33,73 +40,9 @@ main {
       justify-content: end;
       padding-right: 18px;
 
-      .row-1{
-        background-color: #fdf1eb;
-
-        h4{
-          font-family: 'Roboto' sans-serif;
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 25px;
-          color: #4e4e4e;
-          padding: 8px;
-        }
-      }
       
     }
 
-  }
-  
-  .emphasis{
-    width: 260px;
-    height: 439px;
-    border-radius: 3px;
-    border: 2px solid #ececec;
-    display: grid;
-    grid-template-rows: 45px 394px;
-
-    .row-2{
-      padding: 10px;
-      padding-left: 20px;
-      overflow: auto;
-      
-     
-
-      p{
-        color: #ada0a0;
-        font-family: 'Quicksand' sans-serif;
-        font-size: 14px;
-        line-height: 1.5;
-        letter-spacing: 2;
-        font-weight: 400;
-
-        span{
-          font-size: 13px;
-        }
-      }
-      strong{
-        font-family: 'Quicksand' sans-serif;
-        color: #5c5c5c;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.5;
-        letter-spacing: 1;
-      }
-    }
-
-    .row-2::-webkit-scrollbar{
-      width: 4px;
-    }
-
-    .row-2::-webkit-scrollbar-track{
-      background-color: #e7e7e7;
-    }
-
-    .row-2::-webkit-scrollbar-thumb{
-      border-radius: 5px;
-      background-color: #bfbfbf;
-      width: 2px;
-    }
   }
 
   .fav-btn{
@@ -109,7 +52,7 @@ main {
   } 
 
   h3{
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #ed7839;
     font-size: 14px;
@@ -131,7 +74,7 @@ main {
 
       p {
         padding-left: 5px;
-        font-family: "Roboto" sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 16px;
       }

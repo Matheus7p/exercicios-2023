@@ -13,8 +13,12 @@
     margin: 0;
 }
 
+nav{
+  
+}
+
 .sidebar {
-    display: inline;
+    // display: inline;
     margin: 0;
     left: 0;
     width: 100%;
@@ -42,7 +46,7 @@
   }
 
   .menu_item p {
-    font-family:  'Quicksand' ;
+    font-family:  'Quicksand', sans-serif ;
     font-weight: 500;
     width: 99px;
     height: 19px;
