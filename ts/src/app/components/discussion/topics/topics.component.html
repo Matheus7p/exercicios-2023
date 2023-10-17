@@ -5,7 +5,7 @@
 </div>
 
 <div class="cardBody">
-    Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
+    <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
 </div>
 
 <div class="cardFooter">
@@ -16,3 +16,25 @@
     <p>1 like  1 resposta</p>
 </div>
 </div>
+<br>
+
+<div *ngFor="let topic of topics; let i = index" class="topics" (click)="expandTopic(i)">
+    <div class="cardHeader">
+      <h2>{{ topic.title }}</h2>
+      <h3>{{ topic.author }}</h3>
+    </div>
+  
+    <div class="cardBody">
+      <p>{{ topic.body }}</p>
+    </div>
+  
+    <div class="cardFooter">
+        <img src="../../../../assets/moreInfo.svg">
+        <img src="../../../../assets/hearthIcon.svg">
+      <p>{{ topic.likes }} like{{ topic.likes !== 1 ? 's' : '' }} {{ topic.answers }} resposta{{ topic.answers !== 1 ? 's' : '' }}</p>
+    </div>
+  
+    <div *ngIf="expandedTopicIndex === i" class="expanded-section">
+      <app-topic-responses></app-topic-responses>
+    </div>
+  </div>

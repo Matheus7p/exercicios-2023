@@ -1,0 +1,52 @@
+.topic-response{
+    border:1px solid black;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    background-color: #e7e7e7;
+    height: 120px;
+    border: 4px;
+    width: 103.6%;
+    margin: 30px 0px 0px -20px;
+
+    .content{
+        padding: 20px;
+        display: grid;
+        grid-template-rows: auto auto;
+
+
+        .headerTopicAutor{
+            display: flex;
+
+            h5{
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 1.5;
+                color: #5c5c5c;
+                width: 90%;
+            }
+    
+            h6{
+    
+                font-size: 14px;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                list-style: 1.75;
+                color: #ed7839;
+                margin-right: 30px;
+                justify-content: end;
+            }
+        }
+
+        .textAutor{
+
+            p{
+                padding-left: 20px;
+                padding-top: 10px;
+                font-weight: 200;
+                width: 80%;
+                font-size: 14px;
+                color: #4d4d4d;
+            }
+        }     
+    }
+}

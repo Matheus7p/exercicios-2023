@@ -6,6 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./discussion.component.scss']
 })
 export class DiscussionComponent {
+  topics = [
+    {
+      title: 'Assunto da pergunta aparece aqui',
+      author: 'Carlos Henrique Santos',
+      body: 'Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...',
+      likes: 1,
+      answers: 1
+    },
+
+  ];
+
+  expandedTopicIndex: number = -1; 
+  
+  expandTopic(index: number): void {
+    this.expandedTopicIndex = index === this.expandedTopicIndex ? -1 : index;
+  }
+
   createTopic = false;
   novoTopico = {
     subject: '',
@@ -19,13 +36,14 @@ export class DiscussionComponent {
       subject: '',
       content: ''
     };
-    this.showMensage = false; // Oculte a mensagem de sucesso
+    this.showMensage = false; 
   }
 
   submitTopic() {
-    // Implemente aqui a lógica para enviar o novo tópico para o servidor.
-    // Após o envio, defina createTopic como false e showMensagem como true.
+   
     this.createTopic = false;
     this.showMensage = true;
   }
+
+  
 }

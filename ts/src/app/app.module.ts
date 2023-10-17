@@ -11,6 +11,8 @@ import { EmphasisComponent } from './components/emphasis/emphasis.component';
 import { DiscussionComponent } from './components/discussion/discussion.component';
 import { TopicsComponent } from './components/discussion/topics/topics.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
+import { TopicResponsesComponent } from './components/discussion/topics/topic-responses/topic-responses.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { FormsModule } from '@angular/forms';
     SummaryComponent,
     EmphasisComponent,
     DiscussionComponent,
-    TopicsComponent
+    TopicsComponent,
+    FooterComponent,
+    TopicResponsesComponent
   ],
   imports: [
     FormsModule,
