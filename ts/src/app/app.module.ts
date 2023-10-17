@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
@@ -13,6 +14,7 @@ import { TopicsComponent } from './components/discussion/topics/topics.component
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { TopicResponsesComponent } from './components/discussion/topics/topic-responses/topic-responses.component';
+import { ShowMoreComponent } from './components/summary/show-more/show-more.component';
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { TopicResponsesComponent } from './components/discussion/topics/topic-re
     DiscussionComponent,
     TopicsComponent,
     FooterComponent,
-    TopicResponsesComponent
+    TopicResponsesComponent,
+    ShowMoreComponent
   ],
   imports: [
     FormsModule,

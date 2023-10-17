@@ -2,11 +2,12 @@
 
 .summary {
   width: 1255px;
-  height: 189px;
+  height: auto;
   border: 1px solid #ececec;
   margin: 25px 10px 10px 30px;
   display: grid;
-  grid-template-rows: 45px 144px;
+  grid-template-rows: 45px auto;
+
 
   .titleSummary {
     border: 1px solid #ececec;
@@ -24,9 +25,6 @@
 
   .textSummary {
     padding: 10px;
-    max-height: 200px;
-    overflow: hidden;
-    transition: max-heigh 0.3s ease;
 
     p {
       font-family: "Quicksand", sans-serif;
@@ -37,15 +35,17 @@
       color: #5c5c5c;
       margin: 10px 0;
 
-      span {
-        color: orange;
-        font-weight: 900;
-      }
+    }
+    button{
+      color: orange;
+      font-weight: 900;
+      background: none;
+      border: none;
+      justify-content: end;
+
+    }
+    button:hover{
+      cursor: pointer;
     }
   }
-
-  .textSummary:hover{
-    cursor: pointer;
-  }
-
 }

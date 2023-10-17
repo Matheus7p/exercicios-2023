@@ -1,4 +1,4 @@
-import { Component,  } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -8,5 +8,24 @@ import { Component,  } from '@angular/core';
 })
 export class SummaryComponent  {
 
+  showMore:boolean=false;
+  
+  btnShowMore = [
+    {
+      text: 'ver mais'
+    }
+  ]
+
+
+  toogleTag()
+  {
+    this.showMore=!this.showMore
+    
+    this.btnShowMore = [
+      {
+        text: 'ver menos'
+      }
+    ]
+  }
 }
 
