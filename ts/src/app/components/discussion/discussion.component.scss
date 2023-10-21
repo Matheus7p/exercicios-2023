@@ -53,9 +53,9 @@
     }
 
     .containerCreateTopic {
-        display: flex;
-        justify-content: center;
-        position: relative;
+      display: flex;
+      justify-content: center;
+      position: relative;
 
       .btn-create-topic {
         display: flex;
@@ -72,7 +72,44 @@
         border-radius: 3px;
         box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
 
-        &::after{
+        &::after {
+          content: "";
+          position: absolute;
+          margin-left: 10%;
+          width: 80%;
+          height: 1px;
+          background-color: #e7e7e7;
+          left: 0;
+          z-index: -1;
+        }
+
+        img {
+          padding-right: 5px;
+        }
+      }
+
+      .createTopic {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100%;
+
+        button {
+          width: 20%;
+          justify-self: end;
+          border-radius: 0px;
+          padding: 5px;
+          height: 32px;
+          font-family: "Quicksand" sans-serif;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 1px;
+          color: #ffffff;
+          background: linear-gradient(#feb254, #f0813d);
+          border: none;
+          border-radius: 3px;
+          box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+
+          &::after {
             content: "";
             position: absolute;
             margin-left: 10%;
@@ -81,27 +118,15 @@
             background-color: #e7e7e7;
             left: 0;
             z-index: -1;
-
+          }
         }
 
-        img {
-          padding-right: 5px;
-        }
-      }
-
-      .createTopic{
-        display: grid;
-        grid-template-rows: auto auto;
-        width: 100%;
-
-        button{
-          width: 20%;
-          justify-self: end;
-          border-radius: 0px;
+        button:hover{
+          cursor: pointer;
         }
 
-        h6{
-          font-family: 'Quicksand'sans-serif;
+        h6 {
+          font-family: "Quicksand" sans-serif;
           text-align: center;
           color: #5c5c5c;
           font-size: 14px;
@@ -110,14 +135,14 @@
           font-weight: 200;
         }
 
-        form{
+        form {
           display: grid;
           grid-template-rows: auto auto;
           gap: 10px;
           justify-content: start;
-          
-          label{
-            font-family: 'Roboto' sans-serif;
+
+          label {
+            font-family: "Roboto" sans-serif;
             font-weight: 700;
             font-size: 16px;
             line-height: 1;
@@ -125,7 +150,7 @@
             color: #ed7839;
           }
 
-          input{
+          input {
             width: 1000px;
             border: 1px solid #cccccc;
             height: 39px;
@@ -133,34 +158,31 @@
             padding-left: 20px;
           }
 
-          input::placeholder{
+          input::placeholder {
             font-size: 14px;
             color: #4d4d4d;
           }
 
-          textarea{
+          textarea {
             height: 120px;
             border: 1px solid #cccccc;
             padding-left: 20px;
             padding-top: 5px;
             outline: none;
           }
-
         }
       }
 
-      .confirmTopic{
+      .confirmTopic {
         display: grid;
         grid-template-rows: auto auto;
 
-
-        button{
+        button {
           justify-content: center;
           max-width: 25%;
           margin-left: 35%;
         }
       }
-      
     }
   }
 

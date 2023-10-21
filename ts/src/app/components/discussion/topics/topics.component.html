@@ -18,13 +18,13 @@
 </div>
 <br>
 
-<div *ngFor="let topic of topics; let i = index" class="topics" (click)="expandTopic(i)">
+<div *ngFor="let topic of topics; let i = index" class="answered-topic" (click)="expandTopic(i)">
     <div class="cardHeader">
       <h2>{{ topic.title }}</h2>
       <h3>{{ topic.author }}</h3>
     </div>
   
-    <div class="cardBody">
+    <div class="ops-topic-subject">
       <p>{{ topic.body }}</p>
     </div>
   
@@ -35,7 +35,10 @@
     </div>
   
     <div *ngIf="expandedTopicIndex === i" class="expanded-section">
-      <app-topic-responses></app-topic-responses>
+      <div class="comments-container">
+        <app-topic-responses></app-topic-responses>
+      </div>
+      
     </div>
     
   </div>

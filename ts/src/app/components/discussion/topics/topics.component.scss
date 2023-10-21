@@ -60,6 +60,66 @@
 
 }
 
-.topics:hover{
+.answered-topic{
+    border: 5px solid #e7e7e7;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    height: 120px;
+    border: 4px;
+    width: 90%;
+    padding: 20px;
+    margin-left: 5%;
+
+    display: grid;
+    grid-template-rows: auto auto auto;
+
+    .cardHeader{
+        h2{
+            font-family: 'Quicksand' sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 2;
+            color: #ed7839;
+        }
+
+        h3{
+            font-family: 'Quicksand' sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            list-style: 1.5;
+            color: #5c5c5c;
+        }
+    }
+
+    .ops-topic-subject{
+
+        p{
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.2;
+            color: #4d4d4d ;
+        }
+    }
+
+    .cardFooter{
+        display: grid;
+        grid-template-columns: 10px 20px 20px;
+        gap: 10px;
+        align-items: center;
+        
+        p{
+            font-family: 'Segoe UI';
+            font-weight: 350;
+            padding-left: 10px;
+            font-size: 10px;
+            line-height: 1.8;
+            color: #757575;
+            white-space: nowrap;
+        }
+    }
+
+}
+
+.answered-topic:hover{
     cursor: pointer;
 }

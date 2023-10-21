@@ -33,7 +33,8 @@
     <div class="containerCreateTopic">
       <div *ngIf="!createTopic && !showMensage">
         <button class="btn-create-topic" (click)="createNewTopic()">
-          Criar Novo Tópico
+          <img src="../../../assets/iconPlus.svg">
+          criar tópico
         </button>
       </div>
       <div *ngIf="createTopic">
@@ -47,8 +48,8 @@
             <label for="subject">Assunto</label>
             <input
               type="text"
-              id="subject"
               name="subject"
+              class="subject"
               placeholder="Defina um tópico sucinto para notificar os autores..."
               [(ngModel)]="novoTopico.subject"
             />
@@ -61,12 +62,13 @@
             >
             </textarea>
 
-            <button class="btn-create-topic" type="submit">Enviar</button>
+            <button type="submit" id="submitTopic">Enviar</button>
           </form>
         </div>
       </div>
       <div *ngIf="showMensage" class="confirmTopic">
         <p>Seu tópico foi enviado com sucesso! :D</p>
+        <p>Aguardando feedback dos autores</p>
         <p>
           Agradecemos por sua contribuição, uma notificação será enviada ao seu
           email assim que seu tópico for respondido!
@@ -75,7 +77,6 @@
           criar novo tópico
         </button>
       </div>
-      
     </div>
     <br>
     <app-topics></app-topics>
